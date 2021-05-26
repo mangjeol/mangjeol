@@ -1,0 +1,30 @@
+.wallet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  justify-content: center;
+  background-color: #f6f6fa;
+  margin: 0px 5px;
+  padding: 0px 40px;
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+  clip-path: inset(-10px -10px -10px -10px);
+  border-radius: 5px;
+  img {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .wallet {
+    margin: 5px 0px;
+    padding: 0px 40px;
+    img {
+      padding: 5px;
+    }
+  }
+}

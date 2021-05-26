@@ -1,0 +1,41 @@
+.main {
+  width: 80%;
+  height: 100vh;
+  margin: 0px auto;
+  background-color: #eee;
+  .homepage {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #eee;
+    &__section4 {
+      margin: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .walletlist {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main {
+    .homepage__section4 {
+      padding: 10px 10px;
+      .walletlist {
+        flex-direction: column;
+      }
+    }
+  }
+}
